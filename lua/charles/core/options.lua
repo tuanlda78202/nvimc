@@ -1,6 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-
 local opt = vim.opt -- for conciseness
 
 -- line numbers
@@ -43,4 +42,3 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
-
