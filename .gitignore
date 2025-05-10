@@ -40,3 +40,4 @@ luac.out
 *.hex
 
 lazy-lock.json
+.DS_Store
