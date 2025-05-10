@@ -42,3 +42,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- ensure hidden is set for plugins like toggleterm
+opt.hidden = true
