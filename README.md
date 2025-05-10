@@ -6,20 +6,15 @@
 
 ## Prerequisites
 
-*   Neovim
-*  Nerd Font (MesloLGS Nerd Font Mono)
+* Neovim
+* Nerd Font (MesloLGS Nerd Font Mono)
 * iTerm 2 (optional)
 
-## installation
-
-1.  **Clone:**
-    ```bash
-    git clone https://github.com/tuanlda78202/nvimc.git ~/.config/nvim
-    ```
-2.  **Launch Neovim:**
-    ```bash
-    nvim
-    ```
+## Installation
+```bash
+git clone https://github.com/tuanlda78202/nvimc.git ~/.config/nvim
+nvim
+```
 ## Features
 
 - Plugin management with [lazy.nvim](https://github.com/folke/lazy.nvim)
