@@ -27,6 +27,7 @@ nvim
 - Auto-completion with nvim-cmp
 - Formatting and linting
 - Session management
+- Support ToggleTerminal
 
 ## Structure
 
