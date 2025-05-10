@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-* Neovim
+* Neovim (v0.11.1)
 * Nerd Font (MesloLGS Nerd Font Mono)
 * iTerm 2 (optional)
 
