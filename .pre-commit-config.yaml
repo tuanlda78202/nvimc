@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/lunarmodules/luacheck
+    rev: v1.1.0
+    hooks:
+      - id: luacheck
+        args: [--no-color]
+
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.18.1
+    hooks:
+      - id: stylua
+        args: [--check]
