@@ -6,24 +6,26 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
 		local colors = {
-			blue = "#65D1FF",
-			green = "#3EFFDC",
-			violet = "#FF61EF",
-			yellow = "#FFDA7B",
-			red = "#FF4A4A",
-			fg = "#c3ccdc",
-			bg = "#112638",
-			inactive_bg = "#2c3043",
+			blue = "#7FBBB3",
+			green = "#A7C080",
+			violet = "#D699B6",
+			yellow = "#DBBC7F",
+			red = "#E67E80",
+			orange = "#E69875",
+			fg = "#D3C6AA",
+			bg = "#1E2326",
+			inactive_bg = "#2E383C",
+			inactive_fg = "#859289",
 		}
 
 		local my_lualine_theme = {
 			normal = {
-				a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
+				a = { bg = colors.green, fg = colors.bg, gui = "bold" },
 				b = { bg = colors.bg, fg = colors.fg },
 				c = { bg = colors.bg, fg = colors.fg },
 			},
 			insert = {
-				a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+				a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
 				b = { bg = colors.bg, fg = colors.fg },
 				c = { bg = colors.bg, fg = colors.fg },
 			},
@@ -59,7 +61,7 @@ return {
 					{
 						lazy_status.updates,
 						cond = lazy_status.has_updates,
-						color = { fg = "#ff9e64" },
+						color = { fg = colors.orange },
 					},
 					{ "encoding" },
 					{ "fileformat" },
