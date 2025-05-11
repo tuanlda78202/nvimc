@@ -8,6 +8,10 @@ local keymap = vim.keymap -- for conciseness
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+-- move lines faster
+keymap.set("n", "J", "5j", { desc = "Move down 5 lines" })
+keymap.set("n", "K", "5k", { desc = "Move up 5 lines" })
+
 -- clear search highlights (space + n + h)
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
