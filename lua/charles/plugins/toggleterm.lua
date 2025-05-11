@@ -5,7 +5,8 @@ return {
     require("toggleterm").setup({
       -- You can specify options here, or leave it empty for defaults.
       -- For a VSCode-like experience, you might want a floating terminal:
-      direction = "float",
+      direction = "horizontal",
+      size = 20, -- specifies the height in lines for horizontal split
       -- open_mapping = [[<c-\>]], -- Keymap handled below
       -- Ensures terminal opens in insert mode
       start_in_insert = true,
@@ -26,7 +27,7 @@ return {
     -- Keymap to easily exit the terminal with Esc while in terminal mode AND also close/toggle it.
     -- If you prefer Esc to only exit terminal insert mode back to normal mode (inside the terminal),
     -- you can use: vim.keymap.set("t", "<Esc>", "<C-\\\\><C-n>", { noremap = true, silent = true, desc = "Exit terminal mode" })
-    vim.keymap.set("t", "<Esc>", "<C-\\\\><C-n><cmd>ToggleTerm<CR>", {noremap = true, silent = true, desc = "Exit and toggle terminal"})
+    vim.keymap.set("t", "<Esc>", "<cmd>ToggleTerm<CR>", {noremap = true, silent = true, desc = "Exit and toggle terminal"})
 
     -- Optional: If you want other keymaps specifically for when the terminal is open,
     -- you can use an autocommand like this:
