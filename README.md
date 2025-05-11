@@ -1,5 +1,7 @@
 # Neovim for MacOS
 
+[Installation](#installation) | [Features](#features) | [Structure](#structure) | [Customization](#customization)
+
 | ![nvidia-docker](https://github.com/tuanlda78202/nvimc/blob/main/assets/neovim.jpeg) |
 |:--:|
 | Variety Is Magic|
@@ -17,31 +19,35 @@ nvim
 ```
 ## Features
 
-- Plugin management with [lazy.nvim](https://github.com/folke/lazy.nvim)
-- File explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
-- Beautiful status line with [lualine](https://github.com/nvim-lualine/lualine.nvim)
-- Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- Git integration with [gitsigns](https://github.com/lewis6991/gitsigns.nvim) and [lazygit](https://github.com/kdheepak/lazygit.nvim)
-- Fuzzy finding with [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-- LSP (Language Server Protocol) support
-- Auto-completion with nvim-cmp
-- Formatting and linting
-- Session management
-- Support ToggleTerminal
+- [x] [LazyVim](https://github.com/LazyVim/LazyVim)
+- [x] [everforest theme](https://github.com/sainnhe/everforest)
+- [x] Plugin management with [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [x] File Explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- [x] Beautiful status line with [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [x] [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [x] [copilot.vim](https://github.com/github/copilot.vim)
+- [x] Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [x] Git integration with [gitsigns](https://github.com/lewis6991/gitsigns.nvim) and [lazygit](https://github.com/kdheepak/lazygit.nvim)
+- [x] Fuzzy finding with [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [x] LSP support
+- [x] [Auto-completion](https://github.com/hrsh7th/nvim-cmp)
+- [x] Formatting
+- [x] Linting
+- [x] Session management
 
 ## Structure
 
-*   **Entry Point:** `init.lua`
-*   **Core Configuration:** `lua/charles/core/` (settings, keymaps)
-*   **Plugin Manager:** `lua/charles/lazy.lua` (bootstraps `lazy.nvim`)
-*   **Plugin Definitions:** `lua/charles/plugins/` (individual plugin specs, e.g., in `lua/charles/plugins/lsp/` for LSP)
+*  Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
+*  Core Configuration: [`lua/charles/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/core) (settings, keymaps)
+*  Plugin Manager: [`lua/charles/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/lazy.lua) (bootstraps `lazy.nvim`)
+*  Plugin Definitions: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins) (individual plugin specs)
 
 ## Customization
 
-- General options: `lua/charles/core/options.lua`
-- Key mappings: `lua/charles/core/keymaps.lua`
-- Plugins: `lua/charles/plugins/`
-- LSP configuration: `lua/charles/plugins/lsp/`
+- General options: [`lua/charles/core/options.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/options.lua)
+- Key mappings: [`lua/charles/core/keymaps.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/keymaps.lua)
+- Plugins: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins)
+- LSP configuration: [`lua/charles/plugins/lsp/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins/lsp)
 
 ## Troubleshooting
 
@@ -50,3 +56,8 @@ If you encounter any issues:
 1. Update Neovim to the latest version
 2. Run `:checkhealth` within Neovim to diagnose problems
 3. Update plugins with `:Lazy update`
+
+## Contributors 
+<a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=tuanlda78202/nvimc" /></a>
+</a>
