@@ -1,16 +1,17 @@
-# Neovim for MacOS
-
+<div align="center">
+  
+# Neovim for Server
 [Installation](#installation) | [Features](#features) | [Structure](#structure) | [Customization](#customization)
 
-| ![nvidia-docker](https://github.com/tuanlda78202/nvimc/blob/main/assets/neovim.jpeg) |
-|:--:|
-| Variety Is Magic|
+<img width="1688" alt="image" src="https://github.com/user-attachments/assets/a8849a43-ac48-48fa-b595-b5f4a48ab9bf" />
+
+</div>
 
 ## Prerequisites
 
 * Neovim (v0.11.1)
 * Nerd Font (MesloLGS Nerd Font Mono)
-* iTerm 2 (optional)
+* iTerm 2 (optional for Mac)
 
 ## Installation
 ```bash
@@ -20,7 +21,7 @@ nvim
 ## Features
 
 - [x] [LazyVim](https://github.com/LazyVim/LazyVim)
-- [x] [everforest theme](https://github.com/sainnhe/everforest)
+- [x] [sainnhe/everforest](https://github.com/sainnhe/everforest)
 - [x] Plugin management with [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [x] File Explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [x] Beautiful status line with [lualine](https://github.com/nvim-lualine/lualine.nvim)
@@ -57,6 +58,10 @@ If you encounter any issues:
 1. Update Neovim to the latest version
 2. Run `:checkhealth` within Neovim to diagnose problems
 3. Update plugins with `:Lazy update`
+
+## Acknowledgement
+
+* [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
 
 ## Contributors 
 <a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
