@@ -20,6 +20,8 @@ nvim
 ```
 ## Features
 
+<img width="1698" alt="image" src="https://github.com/user-attachments/assets/5bba23a0-d47b-4e98-991f-60cd62cb779d" />
+
 - [x] [LazyVim](https://github.com/LazyVim/LazyVim)
 - [x] [sainnhe/everforest](https://github.com/sainnhe/everforest)
 - [x] Plugin management with [lazy.nvim](https://github.com/folke/lazy.nvim)
