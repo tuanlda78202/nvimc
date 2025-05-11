@@ -1,7 +1,7 @@
 <div align="center">
   
 # Neovim for Server
-[Installation](#installation) | [Features](#features) | [Structure](#structure) | [Customization](#customization)
+[Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
 
 <img width="1688" alt="image" src="https://github.com/user-attachments/assets/a8849a43-ac48-48fa-b595-b5f4a48ab9bf" />
 
@@ -15,7 +15,7 @@
 
 ## Installation
 ```bash
-git clone https://github.com/tuanlda78202/nvimc.git ~/.config/nvim
+git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim
 nvim
 ```
 ## Features
@@ -37,8 +37,52 @@ nvim
 - [x] [outline.nvim](https://github.com/hedyhli/outline.nvim) 
 - [x] Session management
 
-## Structure
+## Tree Structure
 
+```
+.
+├── init.lua
+├── lazy-lock.json
+└── lua
+    └── charles
+        ├── core
+        │   ├── init.lua
+        │   ├── keymaps.lua
+        │   └── options.lua
+        ├── lazy.lua
+        └── plugins
+            ├── alpha.lua
+            ├── auto-session.lua
+            ├── autopairs.lua
+            ├── bufferline.lua
+            ├── colorscheme.lua
+            ├── comment.lua
+            ├── copilot.lua
+            ├── dressing.lua
+            ├── formatting.lua
+            ├── gitsigns.lua
+            ├── indent-blankline.lua
+            ├── init.lua
+            ├── lazygit.lua
+            ├── linting.lua
+            ├── lsp
+            │   ├── lspconfig.lua
+            │   └── mason.lua
+            ├── lualine.lua
+            ├── nvim-cmp.lua
+            ├── nvim-tree.lua
+            ├── outline.lua
+            ├── substitute.lua
+            ├── surround.lua
+            ├── telescope.lua
+            ├── todo-comments.lua
+            ├── toggleterm.lua
+            ├── treesitter.lua
+            ├── trouble.lua
+            ├── vim-maximizer.lua
+            └── which-key.lua
+```
+      
 *  Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
 *  Core Configuration: [`lua/charles/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/core) (settings, keymaps)
 *  Plugin Manager: [`lua/charles/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/lazy.lua) (bootstraps `lazy.nvim`)
@@ -63,7 +107,7 @@ If you encounter any issues:
 
 * [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
 
-## Contributors 
+## Contributor
 <a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=tuanlda78202/nvimc" /></a>
 </a>
