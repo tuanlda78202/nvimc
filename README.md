@@ -33,6 +33,7 @@ nvim
 - [x] [Auto-completion](https://github.com/hrsh7th/nvim-cmp)
 - [x] Formatting
 - [x] Linting
+- [x] [outline.nvim](https://github.com/hedyhli/outline.nvim) 
 - [x] Session management
 
 ## Structure
