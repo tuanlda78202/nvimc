@@ -38,6 +38,7 @@ nvim
 - [x] Linting
 - [x] [outline.nvim](https://github.com/hedyhli/outline.nvim) 
 - [x] Session management
+- [ ] [Cursor](https://github.com/yetone/avante.nvim)
 
 ## Tree Structure
 
