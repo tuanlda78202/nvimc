@@ -103,6 +103,23 @@ return {
 						},
 					})
 				end,
+				["pyright"] = function()
+					lspconfig["pyright"].setup({
+						capabilities = capabilities,
+						settings = {
+							python = {
+								analysis = {
+									autoSearchPaths = true,
+									useLibraryCodeForTypes = true,
+									diagnosticMode = "workspace",
+									typeCheckingMode = "basic",
+								},
+							},
+						},
+					})
+				end,
+				["pylsp"] = function()
+				end,
 			},
 		})
 	end,
