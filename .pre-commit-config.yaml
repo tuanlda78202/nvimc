@@ -1,12 +1,23 @@
 repos:
-  - repo: https://github.com/lunarmodules/luacheck
-    rev: v1.1.0
+  - repo: local
     hooks:
       - id: luacheck
-        args: [--no-color]
+        name: luacheck
+        entry: make lint
+        language: system
+        files: \.lua$
+        pass_filenames: false
+      - id: stylua-format
+        name: stylua-format
+        entry: make format
+        language: system
+        files: \.lua$
+        pass_filenames: false
 
-  - repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v0.18.1
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
     hooks:
-      - id: stylua
-        args: [--check]
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files

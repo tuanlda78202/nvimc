@@ -47,7 +47,7 @@ return {
 
 		-- Disable folding on alpha buffer
 		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
-		
+
 		-- Set custom highlight for header
 		vim.cmd([[highlight AlphaHeader guifg=#A7C080]])
 		dashboard.section.header.opts.hl = "AlphaHeader"

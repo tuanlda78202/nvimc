@@ -41,3 +41,5 @@ luac.out
 
 lazy-lock.json
 .DS_Store
+uv.lock
+pyproject.toml

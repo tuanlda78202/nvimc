@@ -118,8 +118,7 @@ return {
 						},
 					})
 				end,
-				["pylsp"] = function()
-				end,
+				["pylsp"] = function() end,
 			},
 		})
 	end,
