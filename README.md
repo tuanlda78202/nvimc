@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
 </p>
 
-[Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
+[Installation](#installation) | [Features](#features) | [Docs](#documents) | [Structure](#tree-structure) | [Customization](#customization)
 <img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
 
 </div>
@@ -46,62 +46,9 @@ nvim
 - [x] Session management
 - [ ] [Cursor](https://github.com/yetone/avante.nvim)
 
-## Tree Structure
+## Documents
 
-```
-.
-├── init.lua
-└── lua
-    └── nvims
-        ├── core
-        │   ├── init.lua
-        │   ├── keymaps.lua
-        │   └── options.lua
-        ├── lazy.lua
-        └── plugins
-            ├── alpha.lua
-            ├── auto-session.lua
-            ├── autopairs.lua
-            ├── bufferline.lua
-            ├── colorscheme.lua
-            ├── comment.lua
-            ├── copilot.lua
-            ├── dressing.lua
-            ├── formatting.lua
-            ├── gitsigns.lua
-            ├── indent-blankline.lua
-            ├── init.lua
-            ├── lazygit.lua
-            ├── linting.lua
-            ├── lsp
-            │   ├── lspconfig.lua
-            │   └── mason.lua
-            ├── lualine.lua
-            ├── nvim-cmp.lua
-            ├── nvim-tree.lua
-            ├── outline.lua
-            ├── substitute.lua
-            ├── surround.lua
-            ├── telescope.lua
-            ├── todo-comments.lua
-            ├── toggleterm.lua
-            ├── treesitter.lua
-            ├── trouble.lua
-            ├── vim-maximizer.lua
-            └── which-key.lua
-```
-
-* Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
-* Core Configuration: [`lua/nvims/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/core) (settings, keymaps)
-* Plugin Manager: [`lua/nvims/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/lazy.lua) (bootstraps `lazy.nvim`)
-* Plugin Definitions: [`lua/nvims/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins) (individual plugin specs)
-
-## Customization
-
-* General options: [`lua/nvims/core/options.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/core/options.lua)
-* Key mappings: [`lua/nvims/core/keymaps.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/core/keymaps.lua)
-* Plugins: [`lua/nvims/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins)
-* LSP configuration: [`lua/nvims/plugins/lsp/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins/lsp)
+* [Key Mapping & Customization](docs/keymapping.md)
 
 ## Troubleshooting
 
