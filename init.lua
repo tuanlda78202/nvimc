@@ -1,2 +1,2 @@
-require("charles.core")
-require("charles.lazy")
+require("nvims.core")
+require("nvims.lazy")

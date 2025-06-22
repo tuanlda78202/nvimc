@@ -147,7 +147,7 @@ ci: format-check lint
 check: pre-commit ci
 	@echo "✅ All checks completed successfully!"
 
-# Test target (customize based on your testing setup)
+# Test target
 test:
 	@echo "No tests configured yet"
 	@echo "Add your test commands here"

@@ -1,10 +1,9 @@
 <div align="center">
-  
+
 # Neovim for Server
+
 [Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
-
 <img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
-
 
 </div>
 
@@ -15,6 +14,7 @@
 * [iTerm2](https://iterm2.com/) (optional for Mac)
 
 ## Installation
+
 ```bash
 git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim
 nvim
@@ -37,7 +37,7 @@ nvim
 - [x] [Auto-completion](https://github.com/hrsh7th/nvim-cmp)
 - [x] Formatting
 - [x] Linting
-- [x] [outline.nvim](https://github.com/hedyhli/outline.nvim) 
+- [x] [outline.nvim](https://github.com/hedyhli/outline.nvim)
 - [x] Session management
 - [ ] [Cursor](https://github.com/yetone/avante.nvim)
 
@@ -46,9 +46,8 @@ nvim
 ```
 .
 ├── init.lua
-├── lazy-lock.json
 └── lua
-    └── charles
+    └── nvims
         ├── core
         │   ├── init.lua
         │   ├── keymaps.lua
@@ -86,18 +85,18 @@ nvim
             ├── vim-maximizer.lua
             └── which-key.lua
 ```
-      
-*  Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
-*  Core Configuration: [`lua/charles/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/core) (settings, keymaps)
-*  Plugin Manager: [`lua/charles/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/lazy.lua) (bootstraps `lazy.nvim`)
-*  Plugin Definitions: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins) (individual plugin specs)
+
+* Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
+* Core Configuration: [`lua/nvims/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/core) (settings, keymaps)
+* Plugin Manager: [`lua/nvims/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/lazy.lua) (bootstraps `lazy.nvim`)
+* Plugin Definitions: [`lua/nvims/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins) (individual plugin specs)
 
 ## Customization
 
-- General options: [`lua/charles/core/options.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/options.lua)
-- Key mappings: [`lua/charles/core/keymaps.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/keymaps.lua)
-- Plugins: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins)
-- LSP configuration: [`lua/charles/plugins/lsp/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins/lsp)
+* General options: [`lua/nvims/core/options.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/core/options.lua)
+* Key mappings: [`lua/nvims/core/keymaps.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/nvims/core/keymaps.lua)
+* Plugins: [`lua/nvims/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins)
+* LSP configuration: [`lua/nvims/plugins/lsp/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/nvims/plugins/lsp)
 
 ## Troubleshooting
 
@@ -107,11 +106,13 @@ If you encounter any issues:
 2. Run `:checkhealth` within Neovim to diagnose problems
 3. Update plugins with `:Lazy update`
 
-## Acknowledgement
+## Resources
 
 * [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
+* [Boost your Coding Fu with VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/)
 
 ## Contributor
+
 <a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=tuanlda78202/nvimc" /></a>
 </a>
