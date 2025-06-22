@@ -3,11 +3,12 @@
 # Neovim for Server
 
 <p>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License: MIT"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/tuanlda78202/nvims/ci.yaml?branch=main&label=ci&logo=github" alt="CI Status">
     <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
 </p>
 
-[Installation](#installation) | [Features](#features) | [Docs](#documents) | [Structure](#tree-structure) | [Customization](#customization)
+[Installation](#installation) | [Features](#features) | [Docs](#documents)
 <img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
 
 </div>
@@ -50,21 +51,15 @@ nvim
 
 * [Key Mapping & Customization](docs/keymapping.md)
 
-## Troubleshooting
-
-If you encounter any issues:
-
-1. Update Neovim to the latest version
-2. Run `:checkhealth` within Neovim to diagnose problems
-3. Update plugins with `:Lazy update`
-
 ## Resources
 
 * [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
 * [Boost your Coding Fu with VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/)
 
-## Contributor
+## Contributors
 
-<a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=tuanlda78202/nvimc" /></a>
-</a>
+<p align="left">
+  <a href="https://github.com/tuanlda78202/nvims/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=tuanlda78202/nvims" />
+  </a>
+</p>
