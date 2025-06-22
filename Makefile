@@ -147,7 +147,7 @@ ci: format-check lint
 check: pre-commit ci
 	@echo "✅ All checks completed successfully!"
 
-# Test target (customize based on your testing setup)
+# Test target
 test:
 	@echo "No tests configured yet"
 	@echo "Add your test commands here"
@@ -186,3 +186,58 @@ auto-fix:
 # Fix formatting issues when format-check fails
 fix-and-check: format format-check
 	@echo "✅ Format fixed and verified!"
+
+# -- Act (GitHub Actions Local Runner) --
+
+act-install:
+	@echo "⚒️ Installing act as GitHub CLI extension..."
+	@if command -v gh >/dev/null 2>&1; then \
+		gh extension install https://github.com/nektos/gh-act || \
+		echo "✅ Act extension already installed or installation completed"; \
+	else \
+		echo "❌ GitHub CLI not installed. Install with: brew install gh (macOS) or apt-get install gh (Ubuntu)"; \
+		echo "   Or install act directly: curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash"; \
+		exit 1; \
+	fi
+	@echo "✅ Act installation completed!"
+
+act-version:
+	@echo "📋 Checking act version and info..."
+	@if command -v gh >/dev/null 2>&1 && gh extension list | grep -q gh-act; then \
+		gh act --version || gh act --help | head -5; \
+	elif command -v act >/dev/null 2>&1; then \
+		act --version || act --help | head -5; \
+	else \
+		echo "❌ Act not found. Run 'make act-install' first"; \
+		exit 1; \
+	fi
+
+act-check:
+	@echo "⚒️ Validating GitHub Actions workflows..."
+	@if command -v gh >/dev/null 2>&1 && gh extension list | grep -q gh-act; then \
+		gh act -l; \
+	elif command -v act >/dev/null 2>&1; then \
+		act -l; \
+	else \
+		echo "❌ Act not found. Run 'make act-install' first"; \
+		exit 1; \
+	fi
+	@echo "✅ Act workflow validation completed!"
+
+act-push:
+	@echo "⚒️ Running push event workflows locally..."
+	@if command -v gh >/dev/null 2>&1 && gh extension list | grep -q gh-act; then \
+		gh act push -v --container-architecture linux/amd64; \
+	elif command -v act >/dev/null 2>&1; then \
+		act push -v --container-architecture linux/amd64; \
+	else \
+		echo "❌ Act not found. Run 'make act-install' first"; \
+		exit 1; \
+	fi
+
+act-clean:
+	@echo "⚒️ Cleaning up act containers and volumes..."
+	@docker container prune -f --filter "label=act" 2>/dev/null || true
+	@docker volume prune -f --filter "label=act" 2>/dev/null || true
+	@docker image prune -f --filter "label=act" 2>/dev/null || true
+	@echo "✅ Act cleanup completed!"

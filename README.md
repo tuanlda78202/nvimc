@@ -1,22 +1,26 @@
 <div align="center">
-  
-# Neovim for Server
-[Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
 
-<img width="1688" alt="image" src="https://github.com/user-attachments/assets/a8849a43-ac48-48fa-b595-b5f4a48ab9bf" />
+# Neovim for Server
+
+<p>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT"></a>
+    <img src="https://img.shields.io/github/actions/workflow/status/tuanlda78202/nvims/ci.yaml?branch=main&label=ci&logo=github" alt="CI Status">
+    <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
+</p>
+
+[Installation](#installation) | [Features](#features) | [Docs](#documents)
+<img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
 
 </div>
 
-## Prerequisites
-
-* Neovim (v0.11.1)
-* Nerd Font (MesloLGS Nerd Font Mono)
-* iTerm 2 (optional for Mac)
-
 ## Installation
+
+* [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) (v0.11.1)
+* [Nerd Font](https://github.com/ryanoasis/nerd-fonts) (MesloLGS Nerd Font Mono)
+* [iTerm2](https://iterm2.com/) (optional for Mac)
+
 ```bash
-git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim
-nvim
+git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 ```
 ## Features
 
@@ -36,81 +40,23 @@ nvim
 - [x] [Auto-completion](https://github.com/hrsh7th/nvim-cmp)
 - [x] Formatting
 - [x] Linting
-- [x] [outline.nvim](https://github.com/hedyhli/outline.nvim) 
+- [x] [outline.nvim](https://github.com/hedyhli/outline.nvim)
 - [x] Session management
 - [ ] [Cursor](https://github.com/yetone/avante.nvim)
 
-## Tree Structure
+## Documents
 
-```
-.
-├── init.lua
-├── lazy-lock.json
-└── lua
-    └── charles
-        ├── core
-        │   ├── init.lua
-        │   ├── keymaps.lua
-        │   └── options.lua
-        ├── lazy.lua
-        └── plugins
-            ├── alpha.lua
-            ├── auto-session.lua
-            ├── autopairs.lua
-            ├── bufferline.lua
-            ├── colorscheme.lua
-            ├── comment.lua
-            ├── copilot.lua
-            ├── dressing.lua
-            ├── formatting.lua
-            ├── gitsigns.lua
-            ├── indent-blankline.lua
-            ├── init.lua
-            ├── lazygit.lua
-            ├── linting.lua
-            ├── lsp
-            │   ├── lspconfig.lua
-            │   └── mason.lua
-            ├── lualine.lua
-            ├── nvim-cmp.lua
-            ├── nvim-tree.lua
-            ├── outline.lua
-            ├── substitute.lua
-            ├── surround.lua
-            ├── telescope.lua
-            ├── todo-comments.lua
-            ├── toggleterm.lua
-            ├── treesitter.lua
-            ├── trouble.lua
-            ├── vim-maximizer.lua
-            └── which-key.lua
-```
-      
-*  Entry Point:  [`init.lua`](https://github.com/tuanlda78202/nvimc/blob/main/init.lua)
-*  Core Configuration: [`lua/charles/core/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/core) (settings, keymaps)
-*  Plugin Manager: [`lua/charles/lazy.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/lazy.lua) (bootstraps `lazy.nvim`)
-*  Plugin Definitions: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins) (individual plugin specs)
+* [Key Mapping & Customization](docs/keymapping.md)
 
-## Customization
-
-- General options: [`lua/charles/core/options.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/options.lua)
-- Key mappings: [`lua/charles/core/keymaps.lua`](https://github.com/tuanlda78202/nvimc/blob/main/lua/charles/core/keymaps.lua)
-- Plugins: [`lua/charles/plugins/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins)
-- LSP configuration: [`lua/charles/plugins/lsp/`](https://github.com/tuanlda78202/nvimc/tree/main/lua/charles/plugins/lsp)
-
-## Troubleshooting
-
-If you encounter any issues:
-
-1. Update Neovim to the latest version
-2. Run `:checkhealth` within Neovim to diagnose problems
-3. Update plugins with `:Lazy update`
-
-## Acknowledgement
+## Resources
 
 * [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
+* [Boost your Coding Fu with VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/)
 
-## Contributor
-<a href="https://github.com/tuanlda78202/nvimc/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=tuanlda78202/nvimc" /></a>
-</a>
+## Contributors
+
+<p align="left">
+  <a href="https://github.com/tuanlda78202/nvims/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=tuanlda78202/nvims" />
+  </a>
+</p>
