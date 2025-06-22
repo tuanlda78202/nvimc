@@ -3,7 +3,7 @@
 # Neovim for Server
 
 <p>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License: MIT"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/tuanlda78202/nvims/ci.yaml?branch=main&label=ci&logo=github" alt="CI Status">
     <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
 </p>
@@ -13,17 +13,14 @@
 
 </div>
 
-## Prerequisites
+## Installation
 
 * [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) (v0.11.1)
 * [Nerd Font](https://github.com/ryanoasis/nerd-fonts) (MesloLGS Nerd Font Mono)
 * [iTerm2](https://iterm2.com/) (optional for Mac)
 
-## Installation
-
 ```bash
-git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim
-nvim
+git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 ```
 ## Features
 
