@@ -2,6 +2,11 @@
 
 # Neovim for Server
 
+<p>
+    <img src="https://img.shields.io/github/actions/workflow/status/tuanlda78202/nvims/ci.yaml?branch=main&label=ci&logo=github" alt="CI Status">
+    <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
+</p>
+
 [Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
 <img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
 
