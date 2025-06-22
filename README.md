@@ -3,15 +3,16 @@
 # Neovim for Server
 [Installation](#installation) | [Features](#features) | [Structure](#tree-structure) | [Customization](#customization)
 
-<img width="1688" alt="image" src="https://github.com/user-attachments/assets/a8849a43-ac48-48fa-b595-b5f4a48ab9bf" />
+<img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
+
 
 </div>
 
 ## Prerequisites
 
-* Neovim (v0.11.1)
-* Nerd Font (MesloLGS Nerd Font Mono)
-* iTerm 2 (optional for Mac)
+* [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) (v0.11.1)
+* [Nerd Font](https://github.com/ryanoasis/nerd-fonts) (MesloLGS Nerd Font Mono)
+* [iTerm2](https://iterm2.com/) (optional for Mac)
 
 ## Installation
 ```bash
