@@ -26,10 +26,11 @@ jobs:
         run: luarocks install luacheck
 
       - name: Install StyLua
-        uses: JohnnyMorganz/stylua-action@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: v0.18.1
+        run: |
+          wget -O stylua.zip https://github.com/JohnnyMorganz/StyLua/releases/download/v0.18.1/stylua-linux-x86_64.zip
+          unzip stylua.zip
+          chmod +x stylua
+          sudo mv stylua /usr/local/bin/
 
       - name: Set up Python (for pre-commit)
         uses: actions/setup-python@v4
