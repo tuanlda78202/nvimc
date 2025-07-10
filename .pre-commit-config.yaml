@@ -18,6 +18,7 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        exclude: ^lua/nvims/plugins/snacks\.lua$
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
