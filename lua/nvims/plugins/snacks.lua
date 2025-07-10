@@ -95,13 +95,13 @@ return {
 				end,
 			},
 			sections = {
-				-- { section = "header" },
-				{
-					section = "terminal",
-					cmd = "chafa ~/Desktop/x.jpg --format symbols --symbols vhalf --size 150x100; sleep .1",
-					height = 18,
-					padding = 2,
-				},
+				{ section = "header" },
+				-- {
+				-- 	section = "terminal",
+				-- 	cmd = "chafa ~/Desktop/x.jpg --format symbols --symbols vhalf --size 150x100; sleep .1",
+				-- 	height = 18,
+				-- 	padding = 2,
+				-- },
 				{ section = "keys", gap = 1, padding = 1 },
 				{ section = "startup" },
 			},
