@@ -5,11 +5,11 @@
 <p>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/tuanlda78202/nvims/ci.yaml?branch=main&label=ci&logo=github" alt="CI Status">
-    <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims" alt="Last Commit">
+    <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims?branch=main&label=commit" alt="Last Commit">
 </p>
 
 [Installation](#installation) | [Features](#features) | [Docs](#documents)
-<img width="1692" alt="image" src="https://github.com/user-attachments/assets/04a1f718-5228-485a-acf9-af208516fa4e" />
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/d3b42684-ddbe-44b4-9a0b-4f77dd612d8f" />
 
 </div>
 
@@ -27,11 +27,15 @@ git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 
 | ![llama.cpp](https://github.com/user-attachments/assets/5bba23a0-d47b-4e98-991f-60cd62cb779d) |
 |:--:|
-| `llama.cpp`|
+| `llama.cpp` |
 
-| ![working](https://github.com/user-attachments/assets/68661b6c-f54f-4d6e-892b-bd04c60286f4) |
+| ![gemini](https://github.com/user-attachments/assets/1e54a731-4afe-419c-a3de-7cfc2090f0f0) |
 |:--:|
-| [`tmux`](https://github.com/tmux/tmux/wiki) + `nvims` + [`gemini-cli`](https://github.com/google-gemini/gemini-cli)|
+|  `nvims` + [`tmux`](https://github.com/tmux/tmux/wiki) + [`gemini-cli`](https://github.com/google-gemini/gemini-cli)|
+
+| ![git](https://github.com/user-attachments/assets/fc7d716f-cf5c-4135-8f2c-7498865f4885) |
+|:--:|
+| [lazygit](https://github.com/jesseduffield/lazygit) |
 
 - [x] [LazyVim](https://github.com/LazyVim/LazyVim)
 - [x] [sainnhe/everforest](https://github.com/sainnhe/everforest)
@@ -49,6 +53,7 @@ git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 - [x] Linting
 - [x] [outline.nvim](https://github.com/hedyhli/outline.nvim)
 - [x] Session management
+- [x] [snacks.nvim](https://github.com/folke/snacks.nvim/tree/main)
 - [ ] [Cursor](https://github.com/yetone/avante.nvim)
 
 ## Documents

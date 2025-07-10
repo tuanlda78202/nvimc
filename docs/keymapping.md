@@ -110,6 +110,49 @@ My leader key is set to **Space** (`" "`), which is a popular choice for modern 
 | `<Ctrl-j>` | Insert | `move_selection_next` | Move to next result |
 | `<Ctrl-q>` | Insert | `send_to_qflist` | Send selected to quickfix list |
 
+### Snacks.nvim
+
+#### File and Search Operations
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Space><Space>` | Normal | `Snacks.picker.smart()` | Smart Find Files (intelligent file picker) |
+| `<Space>/` | Normal | `Snacks.picker.grep()` | Live grep search |
+| `<Space>:` | Normal | `Snacks.picker.command_history()` | Command history picker |
+| `<Space>n` | Normal | `Snacks.picker.notifications()` | Notification history |
+
+#### Git Operations
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Space>gl` | Normal | `Snacks.picker.git_log()` | Git log picker |
+| `<Space>gB` | Normal/Visual | `Snacks.gitbrowse()` | Browse git repository online |
+| `<Space>gg` | Normal | `Snacks.lazygit()` | Open Lazygit |
+
+#### Terminal Operations
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Ctrl-`>` | Normal | `Snacks.terminal()` | Toggle terminal |
+| `<Ctrl-_>` | Normal | `Snacks.terminal()` | Toggle terminal (alternative) |
+
+#### UI and Utilities
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Space>z` | Normal | `Snacks.zen()` | Toggle Zen Mode |
+| `<Space>N` | Normal | `Snacks.win()` | Show Neovim News |
+
+#### Toggle Features
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Space>ud` | Normal | `Snacks.toggle.diagnostics()` | Toggle diagnostics display |
+| `<Space>uc` | Normal | `Snacks.toggle.conceallevel()` | Toggle conceallevel |
+| `<Space>uT` | Normal | `Snacks.toggle.treesitter()` | Toggle treesitter |
+| `<Space>ub` | Normal | `Snacks.toggle.background()` | Toggle dark/light background |
+| `<Space>uh` | Normal | `Snacks.toggle.inlay_hints()` | Toggle LSP inlay hints |
+
 ### LSP (Language Server Protocol)
 
 | Key Combination | Mode | Action | Description |
@@ -146,11 +189,11 @@ My leader key is set to **Space** (`" "`), which is a popular choice for modern 
 | `<Space>hD` | Normal | `diffthis("~")` | Diff this ~ |
 | `ih` | Operator/Visual | `select_hunk` | Select hunk text object |
 
-### Terminal Integration (toggleterm)
+### Terminal Integration
 
 | Key Combination | Mode | Action | Description |
 |---|---|---|---|
-| `<Ctrl-`>` | Normal/Insert | `:ToggleTerm<CR>` | Toggle terminal |
+| `<Ctrl-`>` | Normal/Insert | `Snacks.terminal()` | Toggle terminal (Snacks) |
 | `<Esc>` | Terminal | `:ToggleTerm<CR>` | Exit and toggle terminal |
 
 ### Substitute Operations
@@ -277,9 +320,11 @@ end, { desc = "Plugin specific action" })
 |---|---|---|
 | `<Space>f` | File/Find operations | `ff`, `fr`, `fs`, `fc`, `ft` |
 | `<Space>e` | Explorer operations | `ee`, `ef`, `et`, `ec`, `er` |
+| `<Space>g` | Git operations | `gl`, `gB`, `gg`, `hs`, `hr`, `hp`, `hb`, `hd` |
 | `<Space>h` | Git/Hunk operations | `hs`, `hr`, `hp`, `hb`, `hd` |
 | `<Space>s` | Split/Window operations | `sv`, `sh`, `se`, `sx`, `sm` |
 | `<Space>t` | Tab/Todo operations | `to`, `tx`, `tn`, `tp`, `tf` |
+| `<Space>u` | Toggle/UI operations | `ud`, `uc`, `uT`, `ub`, `uh` |
 | `<Space>w` | Workspace/Session | `wr`, `ws` |
 | `g` | Go to operations | `gd`, `gD`, `gi`, `gt`, `gR`, `gh` |
 | `[` / `]` | Navigation | `[d`, `]d`, `[h`, `]h`, `[t`, `]t` |
@@ -315,10 +360,20 @@ This setup automatically loads all plugin configurations from the `lua/nvims/plu
 - `<Ctrl>` + key = Special functions (terminal toggle, etc.)
 
 #### Essential Daily Usage Keys
-- `<Space>ff` - Find files
+- `<Space><Space>` - Smart Find Files
+- `<Space>ff` - Find files (Telescope)
 - `<Space>ee` - Toggle file explorer
-- `<Space>fs` - Search in files
+- `<Space>/` - Live grep
+- `<Space>fs` - Search in files (Telescope)
 - `gd` - Go to definition
 - `<Space>ca` - Code actions
 - `<Space>nh` - Clear highlights
+- `<Space>z` - Toggle Zen Mode
 - `jk` - Exit insert mode
+- `<Space>gl` - Git log picker
+- `<Space>gg` - Lazygit
+- `<Space>n` - Notification history
+- `<Space>:` - Command history
+- `<Space>ud` - Toggle diagnostics
+- `<Space>ub` - Toggle background
+- `<Ctrl-`>` - Toggle terminal
