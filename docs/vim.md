@@ -3,10 +3,8 @@
 *"Vim is for programmers who want to raise their game. In the hands of an expert, Vim shreds text at the speed of thought."*
 
 ---
-## 📋 Table of Contents
 
 - [Vim Cheatsheet](#vim-cheatsheet)
-  - [📋 Table of Contents](#-table-of-contents)
   - [🚀 Getting Started](#-getting-started)
     - [Baby Steps](#baby-steps)
   - [🏃‍♂️ Movement \& Navigation](#️-movement--navigation)
@@ -520,6 +518,5 @@
 
 ## 🔗 References
 
-- [Original Cheatsheet](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/)
-- [Full Book](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/)
+- [Cheatsheet](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/)
 - [VSCodeVim Extension](https://github.com/VSCodeVim/Vim)
