@@ -11,7 +11,7 @@
 [Installation](#installation) | [Features](#features) | [Documents](#documents)
 
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/d3b42684-ddbe-44b4-9a0b-4f77dd612d8f" />
-<p><em>Lightning-fast, ultra-customizable, AI-powered, beautiful UI—VSCode vibes in the terminal</em></p>
+<p><em>Lightning-fast, AI-powered, beautiful UI-VSCode vibes in the terminal</em></p>
 
 </div>
 
