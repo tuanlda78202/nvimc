@@ -60,16 +60,9 @@ git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 
 * [Vim Cheatsheet](docs/vim.md)
 * [Key Mapping & Customization](docs/keymapping.md)
+* [Dotfiles](docs/dotfiles.md)
 
 ## Resources
 
 * [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files)
 * [Boost your Coding Fu with VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/)
-
-## Contributors
-
-<p align="left">
-  <a href="https://github.com/tuanlda78202/nvims/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=tuanlda78202/nvims" />
-  </a>
-</p>

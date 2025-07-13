@@ -30,7 +30,6 @@
     - [Insert Mode Shortcuts](#insert-mode-shortcuts)
   - [👁️ Visual Mode](#️-visual-mode)
     - [Visual Mode Types](#visual-mode-types)
-    - [Visual Mode Workflow](#visual-mode-workflow)
   - [🔍 Search \& Replace](#-search--replace)
     - [Search on Next Match](#search-on-next-match)
   - [📋 Copying \& Pasting](#-copying--pasting)
@@ -65,10 +64,7 @@
     - [Unique to VSCode](#unique-to-vscode)
   - [🔍 Text Objects Extensions](#-text-objects-extensions)
     - [Entire \& Arguments](#entire--arguments)
-  - [💡 Tips \& Tricks](#-tips--tricks)
-    - [Efficiency Tips](#efficiency-tips)
-    - [Learning Strategy](#learning-strategy)
-  - [🔗 References](#-references)
+  - [� References](#-references)
 
 ---
 
@@ -253,12 +249,6 @@
 - `V` - Line-wise visual mode
 - `<C-V>` - Block-wise visual mode
 
-### Visual Mode Workflow
-
-1. Enter visual mode
-2. Move to select text
-3. Apply operator
-
 ---
 
 ## 🔍 Search & Replace
@@ -415,9 +405,8 @@
 ### Block Selection
 
 - `<C-V>` - Visual block mode
-- Select with motions
-- `I` - Insert before selection
-- `A` - Append after selection
+  - `I` - Insert before selection
+  - `A` - Append after selection
 
 ---
 
@@ -489,30 +478,6 @@
 - `yae` - Yank entire buffer
 - `cia` - Change function argument
 - `daa` - Delete function argument with separator
-
----
-
-## 💡 Tips & Tricks
-
-### Efficiency Tips
-
-1. Use `.` to repeat actions
-2. Combine operators with text objects
-3. Use counts to multiply actions
-4. Search and operate with `gn`
-5. Use visual mode for complex selections
-6. Master `f`, `t`, `;`, and `,` for horizontal movement
-7. Use `*` to search for word under cursor
-8. Combine search with `.` for powerful find-and-replace
-
-### Learning Strategy
-
-1. Start with basic motions (`hjkl`, `w`, `b`, `e`)
-2. Learn operators (`d`, `c`, `y`, `p`)
-3. Master text objects (`iw`, `aw`, `i"`, `a"`, etc.)
-4. Practice operator + text object combinations
-5. Add counts and more complex motions
-6. Gradually incorporate plugins and advanced features
 
 ---
 
