@@ -58,6 +58,7 @@ git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 
 ## Documents
 
+* [Vim Cheatsheet](docs/vim.md)
 * [Key Mapping & Customization](docs/keymapping.md)
 
 ## Resources
