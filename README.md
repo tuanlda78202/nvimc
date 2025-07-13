@@ -1,6 +1,6 @@
 <div align="center">
 
-# Neovim for Server
+# Neovim for Servers
 
 <p>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT"></a>
@@ -8,8 +8,11 @@
     <img src="https://img.shields.io/github/last-commit/tuanlda78202/nvims?branch=main&label=commit" alt="Last Commit">
 </p>
 
-[Installation](#installation) | [Features](#features) | [Docs](#documents)
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/d3b42684-ddbe-44b4-9a0b-4f77dd612d8f" />
+[Installation](#installation) | [Features](#features) | [Documents](#documents)
+
+| ![UI](https://github.com/user-attachments/assets/d3b42684-ddbe-44b4-9a0b-4f77dd612d8f) | 
+|:--:| 
+| Lightning-fast, ultra-customizable, AI-powered, beautiful UI—VSCode vibes in the terminal|
 
 </div>
 
@@ -17,11 +20,11 @@
 
 * [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) (v0.11.1)
 * [Nerd Font](https://github.com/ryanoasis/nerd-fonts) (MesloLGS Nerd Font Mono)
-* [iTerm2](https://iterm2.com/) (optional for Mac)
-
-```bash
-git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
-```
+* [iTerm2](https://iterm2.com/) (MacOS-optional)
+* [nvims](https://github.com/tuanlda78202/nvims)
+    ```bash
+    git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
+    ```
 
 ## Features
 
@@ -31,11 +34,11 @@ git clone https://github.com/tuanlda78202/nvims.git ~/.config/nvim && nvim
 
 | ![gemini](https://github.com/user-attachments/assets/1e54a731-4afe-419c-a3de-7cfc2090f0f0) |
 |:--:|
-|  `nvims` + [`tmux`](https://github.com/tmux/tmux/wiki) + [`gemini-cli`](https://github.com/google-gemini/gemini-cli)|
+|  `nvims` + `tmux` + `gemini-cli` |
 
 | ![git](https://github.com/user-attachments/assets/fc7d716f-cf5c-4135-8f2c-7498865f4885) |
 |:--:|
-| [lazygit](https://github.com/jesseduffield/lazygit) |
+| `lazygit` |
 
 - [x] [LazyVim](https://github.com/LazyVim/LazyVim)
 - [x] [sainnhe/everforest](https://github.com/sainnhe/everforest)
