@@ -29,4 +29,5 @@ ignore = {
 exclude_files = {
   ".luarocks",
   "lua_modules",
+  "lua/nvims/plugins/snacks.lua",
 }
