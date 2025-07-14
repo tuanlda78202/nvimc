@@ -117,9 +117,23 @@ return {
 									useLibraryCodeForTypes = true,
 									diagnosticMode = "workspace",
 									typeCheckingMode = "basic",
+									autoImportCompletions = true,
 								},
+								defaultInterpreterPath = vim.fn.exepath("python3") or vim.fn.exepath("python"),
+								pythonPath = vim.fn.exepath("python3") or vim.fn.exepath("python"),
 							},
 						},
+						root_dir = function(fname)
+							return require("lspconfig.util").root_pattern(
+								"pyproject.toml",
+								"setup.py",
+								"setup.cfg",
+								"requirements.txt",
+								"Pipfile",
+								"pyrightconfig.json",
+								".git"
+							)(fname)
+						end,
 					})
 				end,
 				["pylsp"] = function() end,
