@@ -59,7 +59,7 @@ return {
 				-- local venv_name = vim.fn.fnamemodify(venv, ":t")
 				return "🐍 " .. vim.fn.fnamemodify(venv, ":~")
 			end
-			
+
 			-- Return message when no environment is active
 			return "❌ no venv"
 		end
@@ -81,10 +81,13 @@ return {
 						get_python_env,
 						color = function()
 							-- Different colors for active vs inactive
-							if vim.env.VIRTUAL_ENV or (vim.env.CONDA_DEFAULT_ENV and vim.env.CONDA_DEFAULT_ENV ~= "base") then
-								return { fg = colors.green }  -- Green when venv is active
+							if
+								vim.env.VIRTUAL_ENV
+								or (vim.env.CONDA_DEFAULT_ENV and vim.env.CONDA_DEFAULT_ENV ~= "base")
+							then
+								return { fg = colors.green } -- Green when venv is active
 							else
-								return { fg = colors.red }    -- Red when no venv
+								return { fg = colors.red } -- Red when no venv
 							end
 						end,
 					},
