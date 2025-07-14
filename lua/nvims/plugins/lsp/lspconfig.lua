@@ -70,12 +70,16 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
-		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-		for type, icon in pairs(signs) do
-			local hl = "DiagnosticSign" .. type
-			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-		end
+		vim.diagnostic.config({
+			signs = {
+				text = {
+					[vim.diagnostic.severity.ERROR] = " ",
+					[vim.diagnostic.severity.WARN] = " ",
+					[vim.diagnostic.severity.HINT] = "󰠠 ",
+					[vim.diagnostic.severity.INFO] = " ",
+				},
+			},
+		})
 
 		mason_lspconfig.setup({
 			ensure_installed = {}, -- Add any servers you want to ensure are installed here
@@ -113,9 +117,23 @@ return {
 									useLibraryCodeForTypes = true,
 									diagnosticMode = "workspace",
 									typeCheckingMode = "basic",
+									autoImportCompletions = true,
 								},
+								defaultInterpreterPath = vim.fn.exepath("python3") or vim.fn.exepath("python"),
+								pythonPath = vim.fn.exepath("python3") or vim.fn.exepath("python"),
 							},
 						},
+						root_dir = function(fname)
+							return require("lspconfig.util").root_pattern(
+								"pyproject.toml",
+								"setup.py",
+								"setup.cfg",
+								"requirements.txt",
+								"Pipfile",
+								"pyrightconfig.json",
+								".git"
+							)(fname)
+						end,
 					})
 				end,
 				["pylsp"] = function() end,

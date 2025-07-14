@@ -51,6 +51,19 @@ return {
 			},
 		}
 
+		-- Function to get Python environment
+		local function get_python_env()
+			-- Check for virtual environment
+			local venv = vim.env.VIRTUAL_ENV
+			if venv then
+				-- local venv_name = vim.fn.fnamemodify(venv, ":t")
+				return "🐍 " .. vim.fn.fnamemodify(venv, ":~")
+			end
+
+			-- Return message when no environment is active
+			return "❌ no venv"
+		end
+
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
@@ -62,6 +75,21 @@ return {
 						lazy_status.updates,
 						cond = lazy_status.has_updates,
 						color = { fg = colors.orange },
+					},
+					-- Python environment component
+					{
+						get_python_env,
+						color = function()
+							-- Different colors for active vs inactive
+							if
+								vim.env.VIRTUAL_ENV
+								or (vim.env.CONDA_DEFAULT_ENV and vim.env.CONDA_DEFAULT_ENV ~= "base")
+							then
+								return { fg = colors.green } -- Green when venv is active
+							else
+								return { fg = colors.red } -- Red when no venv
+							end
+						end,
 					},
 					{ "encoding" },
 					{ "fileformat" },
