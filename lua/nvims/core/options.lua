@@ -45,3 +45,28 @@ opt.swapfile = false
 
 -- ensure hidden is set for plugins like toggleterm
 opt.hidden = true
+
+-- Terminal-specific configurations for better zsh autosuggestion visibility
+vim.api.nvim_create_autocmd("TermOpen", {
+	pattern = "*",
+	callback = function()
+		-- Set terminal-local options for better zsh experience
+		vim.opt_local.scrolloff = 0
+		vim.opt_local.sidescrolloff = 0
+		
+		-- Additional terminal colors for zsh autosuggestions
+		-- This ensures suggestions are bright enough to be visible
+		vim.fn.setenv("ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE", "fg=#a7a7a7,bg=none,bold")
+	end,
+})
+
+-- Function to adjust terminal colors if needed
+_G.AdjustTerminalColors = function()
+	vim.g.terminal_color_8 = "#b0b0b0"  -- Even brighter for suggestions
+	print("Terminal colors adjusted for better zsh autosuggestion visibility")
+end
+
+-- Command to easily adjust terminal colors
+vim.api.nvim_create_user_command("AdjustTerminalColors", function()
+	_G.AdjustTerminalColors()
+end, { desc = "Adjust terminal colors for better zsh autosuggestion visibility" })
