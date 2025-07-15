@@ -53,7 +53,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
 		-- Set terminal-local options for better zsh experience
 		vim.opt_local.scrolloff = 0
 		vim.opt_local.sidescrolloff = 0
-		
+
 		-- Additional terminal colors for zsh autosuggestions
 		-- This ensures suggestions are bright enough to be visible
 		vim.fn.setenv("ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE", "fg=#a7a7a7,bg=none,bold")
@@ -62,7 +62,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
 
 -- Function to adjust terminal colors if needed
 _G.AdjustTerminalColors = function()
-	vim.g.terminal_color_8 = "#b0b0b0"  -- Even brighter for suggestions
+	vim.g.terminal_color_8 = "#b0b0b0" -- Even brighter for suggestions
 	print("Terminal colors adjusted for better zsh autosuggestion visibility")
 end
 
