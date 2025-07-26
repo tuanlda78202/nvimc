@@ -110,7 +110,38 @@ My leader key is set to **Space** (`" "`), which is a popular choice for modern 
 | `<Ctrl-j>` | Insert | `move_selection_next` | Move to next result |
 | `<Ctrl-q>` | Insert | `send_to_qflist` | Send selected to quickfix list |
 
-### Snacks.nvim
+### GitHub Copilot (AI Code Completion)
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Tab>` | Insert | `accept()` | Accept Copilot suggestion |
+| `<Alt-]>` | Insert | `next()` | Next Copilot suggestion |
+| `<Alt-[>` | Insert | `prev()` | Previous Copilot suggestion |
+| `<Ctrl-]>` | Insert | `dismiss()` | Dismiss Copilot suggestion |
+| `<Alt-CR>` | Normal | `open_panel()` | Open Copilot panel |
+
+#### Copilot Panel Mappings
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `[[` | Normal | `jump_prev` | Jump to previous suggestion |
+| `]]` | Normal | `jump_next` | Jump to next suggestion |
+| `<CR>` | Normal | `accept` | Accept selected suggestion |
+| `gr` | Normal | `refresh` | Refresh suggestions |
+
+### Code Completion (nvim-cmp)
+
+| Key Combination | Mode | Action | Description |
+|---|---|---|---|
+| `<Ctrl-n>` | Insert | `select_next_item()` | Next completion item |
+| `<Ctrl-p>` | Insert | `select_prev_item()` | Previous completion item |
+| `<Ctrl-k>` | Insert | `select_prev_item()` | Alternative: Previous completion item |
+| `<Ctrl-j>` | Insert | `select_next_item()` | Alternative: Next completion item |
+| `<Ctrl-Space>` | Insert | `complete()` | Trigger completion menu |
+| `<Ctrl-e>` | Insert | `abort()` | Close completion menu |
+| `<CR>` | Insert | `confirm()` | Confirm selected completion |
+| `<Ctrl-b>` | Insert | `scroll_docs(-4)` | Scroll documentation up |
+| `<Ctrl-f>` | Insert | `scroll_docs(4)` | Scroll documentation down |
 
 #### File and Search Operations
 
@@ -365,6 +396,8 @@ This setup automatically loads all plugin configurations from the `lua/nvims/plu
 - `<Space>ee` - Toggle file explorer
 - `<Space>/` - Live grep
 - `<Space>fs` - Search in files (Telescope)
+- `<Tab>` - Accept Copilot suggestion (Insert mode)
+- `<Ctrl-n>/<Ctrl-p>` - Navigate completions
 - `gd` - Go to definition
 - `<Space>ca` - Code actions
 - `<Space>nh` - Clear highlights
